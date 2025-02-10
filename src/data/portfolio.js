@@ -3,13 +3,13 @@ export default[
         title: 'About Me',
         imgUrl: '/assets/fish1.png',
         stack: ['Click For More Info'],
-        link: 'https://www.linkedin.com/feed/',
+        link: '/about',
     },
     {
         title: 'Developer Portfolio',
         imgUrl: '/assets/BG.png',
         stack: ['React', 'Tailwind', 'Vite'],
-        link: 'https://www.linkedin.com/feed/',
+        link: null,
     },
     {
         title: 'MORE PROJECTS',
