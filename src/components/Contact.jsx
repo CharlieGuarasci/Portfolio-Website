@@ -34,7 +34,7 @@ function Contact() {
                   className="text-center inline-block px-8 py-3 
                   w-max text-base font-medium rounded-md
                    text-white bg-gradient-to-t
-                    from-blue-500 to-pink-500 
+                    from-black to-black
                     drop-shadow-md hover:stroke-white"
                >
                   Contact

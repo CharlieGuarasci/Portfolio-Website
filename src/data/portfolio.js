@@ -1,7 +1,7 @@
 export default[
     {
         title: 'About Me',
-        imgUrl: '/assets/fish1.png',
+        imgUrl: '/assets/headshot.png',
         stack: ['Click For More Info'],
         link: '/about',
     },
@@ -13,7 +13,7 @@ export default[
     },
     {
         title: 'MORE PROJECTS',
-        imgUrl: '/assets/blampus.png',
+        imgUrl: '/assets/campus.png',
         stack: ['Click For My Git'],
         link: 'https://github.com/CharlieGuarasci',
     },

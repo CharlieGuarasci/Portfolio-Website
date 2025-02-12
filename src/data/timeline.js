@@ -26,9 +26,9 @@ export default [
     {
         year: '2018',
         title: 'First Line of Code',
-        duration: 'the begining',
+        duration: 'the beginning',
         details: 
-            'I wrote my first line of real code when Kahn Academy had a promotion teaching the youth about coding, at the time I never thought that it would start my journey in to the world of coding. However, now I cannot be happier that I did that class.',
+            'I wrote my first line of real code when Khan Academy had a promotion teaching the youth about coding, at the time I never thought that it would start my journey in to the world of coding. However, now I cannot be happier that I did that class.',
 
     },
 ]
