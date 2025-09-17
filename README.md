@@ -1,3 +1,3 @@
 # Personal Portfolio Website
 
-A personal website tp showcase my skills as a developer. 
+A personal website to showcase my skills as a developer. 
