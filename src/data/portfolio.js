@@ -1,7 +1,7 @@
 export default[
     {
         title: 'About Me',
-        imgUrl: '/assets/headshot.png',
+        imgUrl: '/assets/headshot.jpeg',
         stack: ['Click For More Info'],
         link: '/about',
     },
