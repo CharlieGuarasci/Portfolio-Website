@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Title from "./Title";
+import { motion } from "framer-motion";
 
 function About({ theme, handleThemeSwitch }) {
   // Sun and Moon SVGs
@@ -18,8 +19,9 @@ function About({ theme, handleThemeSwitch }) {
       <path fill-rule="evenodd" d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z" clip-rule="evenodd" />
 
     </svg>
-
   );
+
+
 
   return (
     <>
@@ -67,24 +69,54 @@ function About({ theme, handleThemeSwitch }) {
 
 
         {/* Content Section */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="w-full max-w-4xl p-6">
-            <Title>About Me</Title>
-            <p className="text-lg leading-relaxed mb-4">
-              Hi, I'm <span className="font-bold">Charlie Guarasci</span>, a passionate Computer Scientist and Web Developer born and raised in Vancouver BC.
-              I am a second year software design student at Queens University, I specialize in creating modern, responsive web applications just like the website you are currently on.
-            </p>
-            <p className="text-lg leading-relaxed mb-4">
-              Throughout my years as a sotware design student I have worked on a number of projects, whether its for school, work, or just for fun. I have fallen in love with the process, 
-              and I want to pursue a career in this field. Currently, me and a group of four others are working on a project called <span className="font-bold text-blue-700">Campus</span>, a student only marketplace for users to buy and sell used textbooks, furnitue, etc. 
-              
-            </p>
-            <p className="text-lg leading-relaxed">
-              When I'm not coding, you'll find me skiing Whistler, playing guitar, or just ecploring the outdoors.
-            </p>
+       <div className="flex-1 flex items-center justify-center">
+          <div className="w-full max-w-5xl p-6 grid md:grid-cols-2 gap-8 items-center">
+            {/* Left: Photo */}
+            <div className="flex justify-center">
+              <img 
+                src="/assets/headshot.jpeg" 
+                alt="Charlie Guarasci"
+                className="rounded-2xl shadow-xl w-64 md:w-80 border border-stone-700/20"
+              />
+            </div>
+
+            {/* Right: Text */}
+            <div className="bg-stone-50 dark:bg-stone-800 rounded-2xl p-6 md:p-8">
+              <Title>About Me</Title>
+              <motion.div 
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 1 }}
+                transition={{ duration: .4 }}
+              >
+              <p className="text-lg leading-relaxed mb-4">
+                Hi, I'm Charlie Guarasci - a computer science student and web developer from Vancouver, BC. 
+                I'm currently in my second year at Queen’s University, specializing in Software Design. 
+                I love building clean, modern, and responsive web applications.
+              </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 1 }}
+                transition={{ duration: 1, delay: 0.4 }}
+              >
+              <p className="text-lg leading-relaxed mb-4">
+                Over the past few years, I’ve worked on a range of projects for school, startups, and personal development. 
+                I enjoy solving real-world problems through design and code, and I’m especially drawn to full-stack development. 
+                Currently, I’m working with a small team on Campus - a student marketplace platform for subletting, buying and selling textbooks, and other campus essentials.
+              </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 1 }}
+                transition={{ duration: 1, delay: 0.8 }}
+              >
+              <p className="text-lg leading-relaxed">
+              Outside of coding, I’m always learning, experimenting with new frameworks, reading about design, or thinking up side projects. Other then that, I’m usually outside, skiing or exploring somewhere new.
+              </p>
+              </motion.div>
+            </div>
           </div>
         </div>
-
       </div>
     </>
   );
