@@ -48,7 +48,7 @@ function About({ theme, handleThemeSwitch }) {
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 20 20" 
               fill="currentColor" 
-              className="size-5 group-hover:scale-110 transition-transform"
+              className="size-5 transition-transform"
             >
               <path 
                 fillRule="evenodd" 
@@ -72,12 +72,29 @@ function About({ theme, handleThemeSwitch }) {
        <div className="flex-1 flex items-center justify-center">
           <div className="w-full max-w-5xl p-6 grid md:grid-cols-2 gap-8 items-center">
             {/* Left: Photo */}
-            <div className="flex justify-center">
-              <img 
-                src="/assets/headshot.jpeg" 
-                alt="Charlie Guarasci"
-                className="rounded-2xl shadow-xl w-64 md:w-80 border border-stone-700/20"
-              />
+            <div className="">
+              <div className="py-4 grid grid-cols-2 gap-2">
+                <img 
+                  src="/assets/headshot.jpeg" 
+                  alt="Charlie Guarasci"
+                  className="rounded-2xl shadow-xl max-h-[310px] w-64 md:w-80 border border-stone-700/20"
+                />
+                <img 
+                  src="/assets/fish.jpeg" 
+                  alt="Charlie Guarasci"
+                  className="rounded-2xl shadow-xl w-64 max-h-[310px] md:w-80 border border-stone-700/20"
+                />
+                <img 
+                  src="/assets/wakeboard.png" 
+                  alt="Charlie Guarasci"
+                  className="rounded-2xl shadow-xl w-64 max-h-[310px] md:w-80 border border-stone-700/20"
+                />
+                <img 
+                  src="/assets/skiing.png" 
+                  alt="Charlie Guarasci"
+                  className="rounded-2xl shadow-xl w-64 max-h-[310px] md:w-80 border border-stone-700/20"
+                />
+              </div>
             </div>
 
             {/* Right: Text */}
@@ -90,7 +107,7 @@ function About({ theme, handleThemeSwitch }) {
               >
               <p className="text-lg leading-relaxed mb-4">
                 Hi, I'm Charlie Guarasci - a computer science student and web developer from Vancouver, BC. 
-                I'm currently in my second year at Queen’s University, specializing in Software Design. 
+                I'm currently in my third year at Queen’s University, specializing in Software Design. 
                 I love building clean, modern, and responsive web applications.
               </p>
               </motion.div>
@@ -102,7 +119,8 @@ function About({ theme, handleThemeSwitch }) {
               <p className="text-lg leading-relaxed mb-4">
                 Over the past few years, I’ve worked on a range of projects for school, startups, and personal development. 
                 I enjoy solving real-world problems through design and code, and I’m especially drawn to full-stack development. 
-                Currently, I’m working with a small team on Campus - a student marketplace platform for subletting, buying and selling textbooks, and other campus essentials.
+                Currently, I’m working with a small team on Campus - a student marketplace platform for subletting, 
+                buying and selling textbooks, and other campus essentials.
               </p>
               </motion.div>
               <motion.div
@@ -111,7 +129,8 @@ function About({ theme, handleThemeSwitch }) {
                 transition={{ duration: 1, delay: 0.8 }}
               >
               <p className="text-lg leading-relaxed">
-              Outside of coding, I’m always learning, experimenting with new frameworks, reading about design, or thinking up side projects. Other then that, I’m usually outside, skiing or exploring somewhere new.
+              Outside of coding, I’m always learning, experimenting with new frameworks, reading about design, 
+              or thinking up side projects. Other then that, I’m usually outside, skiing or exploring somewhere new.
               </p>
               </motion.div>
             </div>
