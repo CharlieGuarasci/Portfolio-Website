@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App({ theme, handleThemeSwitch }) {
   const sun = (
