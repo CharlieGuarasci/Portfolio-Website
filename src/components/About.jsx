@@ -87,12 +87,12 @@ function About({ theme, handleThemeSwitch }) {
                 <img 
                   src="/assets/wakeboard.png" 
                   alt="Charlie Guarasci"
-                  className="rounded-2xl shadow-xl w-64 max-h-[310px] md:w-80 border border-stone-700/20"
+                  className="rounded-2xl shadow-xl w-64 max-h-[309px] md:w-80 border border-stone-700/20"
                 />
                 <img 
                   src="/assets/skiing.png" 
                   alt="Charlie Guarasci"
-                  className="rounded-2xl shadow-xl w-64 max-h-[310px] md:w-80 border border-stone-700/20"
+                  className="rounded-2xl shadow-xl w-64 max-h-[309px] md:w-80 border border-stone-700/20"
                 />
               </div>
             </div>

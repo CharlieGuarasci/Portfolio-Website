@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
+import { Analytics } from "@vercel/analytics/next"
 
 function App({ theme, handleThemeSwitch }) {
   const sun = (
@@ -33,15 +34,16 @@ function App({ theme, handleThemeSwitch }) {
       >
         {theme === 'dark' ? sun : moon}
       </button>
-      <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <Intro />
-          <Portfolio />
-          <Timeline />
-          <Contact />
-          <Footer />
+        <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen">
+          <div className="max-w-5xl w-11/12 mx-auto">
+            <Intro />
+            <Portfolio />
+            <Timeline />
+            <Contact />
+            <Footer />
+          </div>
         </div>
-      </div>
+      <Analytics/>
     </>
   );
 }
